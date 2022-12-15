@@ -2,12 +2,26 @@
   "name": "prisma-learn",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Giovani-Coelho/Prisma.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giovani-Coelho/Prisma.git"
+  },
   "author": "Giovani Coelho <giovanicoelho2004@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@prisma/client": "4.7.1",
     "prisma": "^4.7.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.9.4"
-  }
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/Giovani-Coelho/Prisma/issues"
+  },
+  "homepage": "https://github.com/Giovani-Coelho/Prisma#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
 }
