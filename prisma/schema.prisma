@@ -28,3 +28,20 @@ model Teachers {
 
   @@map("teachers")
 }
+
+model Authors {
+  id    String  @id @default(uuid())
+  name  String  @unique
+  books Books[]
+
+  @@map("authors")
+}
+
+model Books {
+  id         String  @id @default(uuid())
+  name       String  @unique
+  authors_id String
+  author     Authors @relation(fields: [authors_id], references: [id])
+
+  @@map("books")
+}
