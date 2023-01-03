@@ -45,3 +45,35 @@ model Books {
 
   @@map("books")
 }
+
+model Course {
+  id             String           @id @default(uuid())
+  name           String           @unique
+  description    String?
+  duration       Int
+  created_at     DateTime         @default(now())
+  CoursesModules CoursesModules[]
+
+  @@map("course")
+}
+
+model Modules {
+  id             String           @id @default(uuid())
+  name           String           @unique
+  description    String
+  created_at     DateTime         @default(now())
+  CoursesModules CoursesModules[]
+
+  @@map("modules")
+}
+
+model CoursesModules {
+  id           String   @id @default(uuid())
+  courses      Course   @relation(fields: [fk_id_course], references: [id])
+  fk_id_course String
+  module       Modules  @relation(fields: [fk_id_module], references: [id])
+  fk_id_module String
+  created_at   DateTime @default(now())
+
+  @@map("courses_modules")
+}
