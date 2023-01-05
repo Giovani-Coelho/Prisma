@@ -10,13 +10,7 @@
         "id": "44f34b20-fca4-41b5-a538-037b5f8ee957",
         "fk_id_course": "83c9b668-f3f2-4bda-aeb5-1cc3ea5ce8f0",
         "fk_id_module": "92fe3384-fef7-4eb9-8ae8-32fabf8445e6",
-        "created_at": "2023-01-03T01:38:38.613Z",
-        "module": {
-          "id": "92fe3384-fef7-4eb9-8ae8-32fabf8445e6",
-          "name": "React",
-          "description": "Fundamentos do React",
-          "created_at": "2023-01-03T01:36:17.760Z"
-        }
+        "created_at": "2023-01-03T01:38:38.613Z"
       }
     ]
   }

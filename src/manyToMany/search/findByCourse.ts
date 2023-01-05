@@ -8,11 +8,8 @@ async function main() {
       id: "83c9b668-f3f2-4bda-aeb5-1cc3ea5ce8f0"
     },
     include: {
-      CoursesModules: {
-        include: {
-          module: true
-        }
-      }
+      CoursesModules: true
+
     }
   })
   console.log(JSON.stringify(result))
