@@ -15,7 +15,7 @@ npm install
 
 ## DataBase
 
-- For this project you need to create a database in your postgres.
+- For this aplication you need to create a database in your postgres.
 
 ### Environment Variables
 
