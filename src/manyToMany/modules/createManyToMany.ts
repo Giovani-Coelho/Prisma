@@ -6,10 +6,11 @@ const prisma = new PrismaClient()
 async function main() {
   const result = await prisma.coursesModules.create({
     data: {
-      fk_id_course: "83c9b668-f3f2-4bda-aeb5-1cc3ea5ce8f0",
-      fk_id_module: "92fe3384-fef7-4eb9-8ae8-32fabf8445e6"
+      fk_id_course: "ec4841ea-2333-41f2-9f7b-f86ea8cef97a",
+      fk_id_module: "574a0dbd-3f6f-43a8-b84e-fee6719b6582"
     }
   })
+  console.log(result)
 }
 
 main()

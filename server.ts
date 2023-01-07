@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client"
 const prisma = new PrismaClient();
 
 async function create() {
-  const result = await prisma.courses.create({
+  const result = await prisma.course.create({
     data: {
       duration: 200,
       name: "curso de node",
